@@ -1,0 +1,230 @@
+* {
+    direction: rtl;
+}
+
+.law-main {
+    width: 100%;
+}
+
+main {
+    margin: 0.5% 0% 0% 4%;
+    padding: 0;
+    width: 75vw;
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+    float: left;
+}
+
+aside {
+    margin: 2% 6% 3% 0%;
+    position: fixed;
+    width: 10vw;
+    height: 38vw;
+    border-radius: 8px;
+}
+
+aside div {
+    margin: auto;
+    margin-top: 10.7%;
+    width: 10vw;
+    height: 4vw;
+    background-color: rgb(238, 238, 238);
+    text-align: center;
+    border-radius: 5px;
+}
+
+aside div p {
+    text-align: center;
+    margin-top: 0%;
+    padding: 9% 0%;
+    font-size: 18px;
+}
+
+.box {
+    border: 2px solid rgba(156, 156, 156, 0.445);
+    margin: 0% 2%;
+    border-radius: 17px;
+}
+
+article div p {
+    text-align: right;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+article div p a {
+    width: 5vw;
+    height: 10vw;
+}
+
+.overflow {
+    height: 20vw;
+    overflow-y: scroll;
+}
+
+.book-div {
+    display: inline-block;
+    margin: 2%;
+    /*margin: 1% 0 1% 5%;*/
+    width: 12vw;
+    height: 17vw;
+    border: 2px solid rgba(156, 156, 156, 0.445);
+    border-radius: 17px;
+    text-align: center;
+}
+
+.book-style {
+    width: 11vw;
+    height: 13vw;
+    margin: 0;
+    padding: 0% 8.5% 0% 0%;
+    text-align: center;
+    border-radius: 17px;
+}
+
+.book-pic01 {
+    background-image: url('image/hoghogh-davi02.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.book-pic02 {
+    background-image: url('image/falsafe.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.book-pic03 {
+    background-image: url('image/ahkam01.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.book-pic04 {
+    background-image: url('image/tasarof.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.cal-div {
+    display: inline-block;
+    margin: 0;
+    margin: 1% 0 0% 5%;
+    width: 9.5vw;
+    height: 9.5vw;
+    border: 2px solid rgba(156, 156, 156, 0.445);
+    border-radius: 17px;
+}
+
+main h1 {
+    text-align: right;
+    margin-right: 5%;
+}
+
+p {
+    text-shadow: none;
+}
+
+.hover-a:hover {
+    border: 1px ridge rgb(211, 211, 211);
+    background-color: rgb(121, 121, 121);
+    color: #ffffff;
+    opacity: 0.8;
+    border-radius: 5px;
+    width: 9.8vw;
+    height: 3.75vw;
+}
+
+.book-a:hover {
+    transition: 0.5s ease;
+    opacity: 0.65;
+}
+
+.next {
+    position: relative;
+    font-size: 20px;
+    color: rgb(0, 2, 131);
+}
+a{
+    color: black;
+}
+/*
+for blinking:
+
+.name-class{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color:  #000; }
+    50%{    color: transparent; }
+    99%{    color:#000;  }
+    100%{   color: #000;    }
+}
+*/
+.arrow {
+    position: absolute;
+    top: 40%;
+    transform: translate(-20%, -20%);
+    transform: rotate(90deg);
+}
+
+.arrow span {
+    
+    display: block;
+    width: 0.5vw;
+    height: .5vw;
+    border-bottom: 5px solid rgb(0, 2, 131);
+    border-right: 5px solid rgb(0, 2, 131);
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50%{
+        opacity: 1;
+        
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+
+    }
+}
+.footr{
+    width: 75vw;
+    position: static;
+}
+.law-footer{
+    width: 75vw;
+    height: 30vw;
+    float: left;
+    background-color: aqua;
+    margin: 0.5% 0% 0% 4%;
+    padding: 0;
+}
+/*
+.law-footer{
+    float: right;
+
+    margin-right: 4%;
+    width: 76.5%;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.808);
+}
